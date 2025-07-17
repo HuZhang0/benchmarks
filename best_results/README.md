@@ -1,4 +1,4 @@
-# Best LUT-6 Implementations - 2023
+# Best LUT-6 Implementations - 2025
 The best LUT-6 implementations keep track of the best results of LUT-6 mapped benchmarks, both for size (# of LUTs) and depth (# of levels). 
 
 ### Best results for LUT-6 count
@@ -9,29 +9,29 @@ Arithmetic Benchmarks
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
 | Adder | 256  | 129  | 129 | 126 | T. Besson | ABC-DE: ABC Design Explorer |
 | Barrel shifter  | 135 | 128  | 512  | 4  | R. K. Brayton & A. Mishchenko| ABC Extreme Mapper|
-| **Divisor**  | **128** | **128**   | **3085**   |  **1100**  | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Hypotenuse**  |  **256**  | **128**   | **36507**   | **4631**  | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Log2**  | **32**  | **32**  | **6012** | **257**  | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Max**  |  **512**  | **130**  | **511**  | **134** | **H. Wang and P. Wang** | **EasyLS**  |
-|  **Multiplier**  |  **128**  | **128**  | **4314**  | **208** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Sine**  |  **24**  | **25**  | **1023**  | **110** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Square-root**  |  **128**  | **64**  | **2966**  | **1185** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Square**  | **64**  | **128**  | **2935**  | **200** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
+| Divisor  | 128 | 128   | 3085   |  1100  | A. Costamagna et al. | Information graph-based resubstitution |
+| **Hypotenuse**  |  **256**  | **128**   | **36505**   | **4573**  | **Z. Hu et al.** | **Mixed structural choice-enhanced mapping** |
+| Log2  | 32  | 32  | 6012 | 257  | A. Costamagna et al. | Information graph-based resubstitution |
+| Max  |  512  | 130  | 511  | 134 | H. Wang and P. Wang | EasyLS  |
+| Multiplier  |  128  | 128  | 4314  | 208 | A. Costamagna et al. | Information graph-based resubstitution |
+| **Sine**  |  **24**  | **25**  | **1020**  | **107** | **Z. Hu et al.** | **Mixed structural choice-enhanced mapping** |
+| Square-root  |  128  | 64  | 2966  | 1185 | A. Costamagna et al. | Information graph-based resubstitution |
+| Square  | 64  | 128  | 2935  | 200 | A. Costamagna et al. | Information graph-based resubstitution |
 
 Random-Control Benchmarks
 
 | Benchmark name | Inputs | Outputs | LUT-6 count | Levels | Authors | Method |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|  **Round-robin arbiter**  |  **256**   |  **129**   |  **261**   |  **93** | **T. Besson** | **ABC-DE: ABC Design Explorer** |
-|  Alu control unit   |  7  | 26   | 25 | 2  | A. Grosnit, C. Feng, X. Li, et al. | NAILS |
-|  **Coding-cavlc**    | **10**  | **11**   | **49**   | **7**  | **F. Reichl, F. Slivovsky, S. Szeider** | **Exact Subcircuit Synthesis** |
-|  Decoder  | 8  | 256   | 264   | 2  | L. Machado and J. Cortadella |  Support-Reducing Decomp |
-|  **I2c controller**  |  **147**  | **142**  | **175** | **7**  | **H. Wang and P. Wang** | **EasyLS** |
-|  **Int to float converter** |  **11**  | **7**  | **18**  | **5**  | **F. Reichl, F. Slivovsky, S. Szeider** | **Exact Subcircuit Synthesis** |
-|  **Memory controller**  |  **1204**  | **1231**  | **1694**  | **14** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Priority encoder**  |  **128**  | **8**  | **92** | **30** | **A. Costamagna et al.** | **Information graph-based resubstitution** |
-|  **Lookahead XY router** | **60** | **30** | **18** | **9** | **F. Reichl, F. Slivovsky, S. Szeider** | **Exact Subcircuit Synthesis** |
-|  **Voter** | **1001** | **1** | **1166** | **34**  | **F. Reichl, F. Slivovsky, S. Szeider** | **Exact Subcircuit Synthesis** |
+| Round-robin arbiter  |  256   |  129   |  261   |  93 | T. Besson | ABC-DE: ABC Design Explorer |
+| Alu control unit   |  7  | 26   | 25 | 2  | A. Grosnit, C. Feng, X. Li, et al. | NAILS |
+| Coding-cavlc    | 10  | 11   | 49   | 7  | F. Reichl, F. Slivovsky, S. Szeider | Exact Subcircuit Synthesis |
+| Decoder  | 8  | 256   | 264   | 2  | L. Machado and J. Cortadella |  Support-Reducing Decomp |
+| I2c controller  |  147  | 142  | 175 | 7  | H. Wang and P. Wang | EasyLS |
+| **Int to float converter** |  **11**  | **7**  | **17**  | **5**  | **G. Toms and N. Pepik** | **GTs technology** |
+| Memory controller  |  1204  | 1231  | 1694  | 14 | A. Costamagna et al. | Information graph-based resubstitution |
+| Priority encoder  |  128  | 8  | 92 | 30 | A. Costamagna et al. | Information graph-based resubstitution |
+| Lookahead XY router | 60 | 30 | 18 | 9 | F. Reichl, F. Slivovsky, S. Szeider | Exact Subcircuit Synthesis |
+| **Voter** | **1001** | **1** | **1165** | **27**  | **Z. Hu et al.** | **Mixed structural choice-enhanced mapping** |
 
 MtM Benchmarks 
 
@@ -48,16 +48,16 @@ Arithmetic Benchmarks
 
 | Benchmark name | Inputs | Outputs | LUT-6 count | Levels | Authors | Method |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Adder | 256  | 129  | 347  | 5 | J. Yuan, J. Ye, et al. | EasyRL |
-| Barrel shifter  | 135 |128  | 512  |4  | R. K. Brayton & A. Mishchenko|ABC Extreme Mapper|
-| **Divisor**  | **128** | **128**  | **22258** | **173** | **H. Wang and P. Wang** | **EasyLS** |
-| **Hypotenuse** | **256** | **128**  | **152793** | **473** | **A. Tempia Calvino et al.** | **LUT mapping with Boolean decomposition** |
-|  **Log2**  | **32**  | **32**  | **9613** | **51**  |  **A. Tempia Calvino et al.** | **LUT mapping with Boolean decomposition** |
-|  **Max** |  **512**  | **130**  | **1110** | **6** | **H. Wang and P. Wang** | **EasyLS** |
-| **Multiplier** | **128** | **128** | **6488** | **25** | **A. Tempia Calvino et al.** | **LUT mapping with Boolean decomposition** |
-|  **Sine**  |  **24**  | **25**  | **675550**  | **10** | **H. Wang and P. Wang** | **EasyLS** |
-|  **Square-root**  |  **128**  | **64**  | **24421**  | **153** | **H. Wang and P. Wang** | **EasyLS** |
-|  **Square**  |  **64**  | **128**  | **3700**  | **10** | **H. Wang and P. Wang** | **EasyLS** |
+| **Adder**       | **256** | **129** | **343** | **5** | **T. Besson** | **Tuned ABC-based scripts** |
+| Barrel shifter  | 135  | 128  | 512     | 4    | R. K. Brayton & A. Mishchenko | ABC Extreme Mapper |
+| Divisor         | 128  | 128  | 22258   | 173  | H. Wang and P. Wang           | EasyLS                                 |
+| Hypotenuse      | 256  | 128  | 152793  | 473  | A. Tempia Calvino et al.      | LUT mapping with Boolean decomposition |
+| Log2            | 32   | 32   | 9613    | 51   | A. Tempia Calvino et al.      | LUT mapping with Boolean decomposition |
+| **Max**         | **512** | **130** | **1008** | **6** | **T. Besson** | **Tuned ABC-based scripts** |
+| Multiplier      | 128  | 128  | 6488    | 25   | A. Tempia Calvino et al.      | LUT mapping with Boolean decomposition |
+| Sine            | 24   | 25   | 675550  | 10   | H. Wang and P. Wang           | EasyLS                                 |
+| Square-root     | 128  | 64   | 24421   | 153  | H. Wang and P. Wang           | EasyLS                                 |
+| Square          | 64   | 128  | 3700    | 10   | H. Wang and P. Wang           | EasyLS                                 |
 
 Random-Control Benchmarks
 
@@ -68,11 +68,11 @@ Random-Control Benchmarks
 |  Coding-cavlc    |  10  | 11   | 60   | 3 |  T. Besson | ABC-DE: ABC Design Explorer |
 |  Decoder  | 8  | 256   | 264   | 2  | L. Machado and J. Cortadella | Support-Reducing Decomp |
 |  I2c controller  |  147  | 142  | 193 | 3 | T. Besson | ABC-DE: ABC Design Explorer |
-|  **Int to float converter**  |  **11**  | **7**  | **19**  | **3**  |  **T. Besson** | **ABC-DE: ABC Design Explorer** |
-|  **Memory controller**  |  **1204**  | **1231**  | **1871**  | **5** | **H. Wang and P. Wang** | **EasyLS** |
+|  **Int to float converter**  |  **11**  | **7**  | **24**  | **2**  | **T. Besson** | **Tuned ABC-based scripts** |
+|  **Memory controller**  |  **1204**  | **1231**  | **1764**  | **5** | **T. Besson** | **Tuned ABC-based scripts** |
 |  Priority encoder  | 128 | 8  | 119 | 4 |  T. Besson | ABC-DE: ABC Design Explorer |
 |  Lookahead XY router | 60 | 30 | 25 | 3 | T. Besson | ABC-DE: ABC Design Explorer |
-|  **Voter**  |  **1001**  | **1** | **1336**  | **11** | **H. Wang and P. Wang** | **EasyLS** |
+|  **Voter**  |  **1001**  | **1** | **1328**  | **11** | **T. Besson** | **Tuned ABC-based scripts** |
 
 MtM Benchmarks 
 
@@ -110,3 +110,6 @@ MtM Benchmarks
 | Hexi Wang and Peiyu Wang | Shanghai Jiao Tong University and Huawei Noah's Ark Lab | EasyLS | Based on reinforcement learning and an enhanced LUT-based mapping algorithm presented in [J. Yuan et al.: EasySO: Exploration-enhanced Reinforcement Learning for Logic Synthesis Sequence Optimization and a Comprehensive RL Environment, ICCAD, 2023](https://ieeexplore.ieee.org/document/10323973) and [P. Wang et al.: EasyMap: Improving Technology Mapping via Exploration-Enhanced Heuristics and Adaptive Sequencing, ICCAD, 2023](https://ieeexplore.ieee.org/document/10323973) |
 | A. Tempia Calvino et al. | EPFL and UC Berkeley | LUT mapping with Boolean decomposition | Based on the delay-driven LUT mapping algorithm with Boolean decomposition presented in [A. Tempia Calvino, A. Mishchenko, G. De Micheli, and R. Brayton: Practical Boolean Decomposition for Delay-driven LUT Mapping, IWLS, 2024](https://arxiv.org/pdf/2406.06241) |
 | A. Costamagna et al. | EPFL and UC Berkeley | Information graph-based resubstitution | Based on the paper A. Costamagna, A. Tempia Calvino, A. Mishchenko, and G. De Micheli: Area-Oriented Resubstitution For Networks of Look-Up Tables, IWLS, 2024 |
+| Z. Hu et al. | Ningbo University | Mixed structural choice-enhanced mapping | A mapping framework that combines multiple logic representations and evaluates candidate structures holistically, presented in [Z. Hu, H. Pan, Y. Xia, L. Wang, and Z. Chu: Mixed Structural Choice Operator: Enhancing Technology Mapping with Heterogeneous Representations, DAC, 2025](https://arxiv.org/pdf/2504.12824) |
+| G. Toms and N. Pepik | GT synthesis LLC | GTs technology | Area, power, wires and fan-out efficient optimization algorithms from GTs technology |
+| T. Besson | Zero ASIC Corp. | Tuned ABC-based scripts | Tuned and improved ABC-based scripts with incremental re-synthesis |
